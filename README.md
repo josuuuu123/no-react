@@ -235,59 +235,10 @@ Se comprobó que Docker facilita el despliegue y ejecución de aplicaciones web 
 
 # 10. Evidencias
 
-## Figura 10-1. Clonación del repositorio frontend
-
-*(Insertar captura de pantalla)*
-
----
-
-## Figura 10-2. Instalación de dependencias npm
-
-*(Insertar captura de pantalla)*
-
----
-
-## Figura 10-3. Ejecución local del proyecto React
-
-*(Insertar captura de pantalla)*
-
----
-
-## Figura 10-4. Ejecución del backend MockAPI
-
-*(Insertar captura de pantalla)*
-
----
-
-## Figura 10-5. Creación del Dockerfile
-
-*(Insertar captura de pantalla)*
-
----
-
-## Figura 10-6. Construcción de imagen Docker
-
-*(Insertar captura de pantalla)*
-
----
-
-## Figura 10-7. Verificación de imágenes Docker
-
-*(Insertar captura de pantalla)*
-
----
-
-## Figura 10-8. Contenedor Docker en ejecución
-
-*(Insertar captura de pantalla)*
-
----
-
-## Figura 10-9. Resultado final de la aplicación en el navegador
-
-*(Insertar captura de pantalla)*
-
----
+ <img width="921" height="606" alt="image" src="https://github.com/user-attachments/assets/3cbdab37-8fa9-4e06-9c22-7285a12360b6" />
+ <img width="921" height="603" alt="image" src="https://github.com/user-attachments/assets/821d4714-9777-4012-ba7f-7e33fb48b756" />
+<img width="921" height="601" alt="image" src="https://github.com/user-attachments/assets/16f731d7-a567-4662-9aa6-8497cef566c9" />
+<img width="921" height="317" alt="image" src="https://github.com/user-attachments/assets/b9be13a8-0d4c-4ac5-bdd8-8300be098dba" />
 
 # 11. Bibliografía
 
