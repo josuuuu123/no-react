@@ -16,39 +16,26 @@
 
 # 3. Fundamentos
 
-Docker es una plataforma de virtualización ligera que permite crear, ejecutar y administrar aplicaciones dentro de contenedores. Un contenedor es un entorno aislado que incluye todo lo necesario para ejecutar una aplicación, como librerías, dependencias, archivos de configuración y código fuente. Esto permite que las aplicaciones funcionen de manera uniforme en cualquier sistema operativo que tenga Docker instalado.
+Docker es una plataforma de virtualización ligera que permite crear, ejecutar y administrar aplicaciones dentro de contenedores. Un contenedor es un entorno aislado que incluye todo lo necesario para ejecutar una aplicación, como librerías, dependencias, archivos de configuración y código fuente. Gracias a esto, las aplicaciones pueden ejecutarse de forma idéntica en distintos sistemas operativos y entornos de desarrollo.
 
-En el desarrollo web moderno, Docker se ha convertido en una herramienta fundamental debido a que facilita la portabilidad y el despliegue de aplicaciones frontend y backend. En esta práctica se trabajó con una aplicación desarrollada en React, una biblioteca JavaScript utilizada para construir interfaces de usuario dinámicas y modernas.
+En el desarrollo web moderno, Docker se ha convertido en una herramienta fundamental debido a que facilita el despliegue y mantenimiento de aplicaciones frontend y backend. En esta práctica se trabajó con una aplicación desarrollada en React, una biblioteca JavaScript utilizada para construir interfaces de usuario modernas e interactivas.
 
-El proceso de contenerización consiste en crear un archivo llamado Dockerfile, el cual contiene instrucciones para construir una imagen Docker. Esta imagen funciona como una plantilla que posteriormente puede ejecutarse en forma de contenedor.
+El proceso de contenerización consiste en crear un archivo llamado `Dockerfile`, el cual contiene una serie de instrucciones que Docker utiliza para construir una imagen. Una imagen Docker funciona como una plantilla preparada para ejecutar posteriormente uno o varios contenedores.
 
-Además del frontend React, fue necesario utilizar un backend simulado mediante MockAPI, el cual permite proporcionar datos falsos o de prueba para que el frontend pueda consumir servicios API sin necesidad de un backend real.
+Además del frontend React, fue necesario utilizar un backend simulado mediante MockAPI. Este backend permite generar datos de prueba para que el frontend pueda consumir información y funcionar correctamente sin necesidad de desarrollar un servidor real.
 
-La arquitectura implementada permite separar responsabilidades entre frontend y backend, simulando un entorno profesional de desarrollo basado en microservicios.
+Docker ofrece múltiples ventajas importantes dentro del desarrollo de software:
 
-Docker proporciona varias ventajas importantes:
-
-- Portabilidad entre sistemas operativos.
+- Portabilidad entre diferentes sistemas operativos.
 - Facilidad de despliegue.
-- Aislamiento de aplicaciones.
+- Aislamiento de aplicaciones y dependencias.
 - Escalabilidad.
 - Compatibilidad entre entornos de desarrollo y producción.
+- Simplificación de configuraciones complejas.
 
-En esta práctica también se utilizaron comandos básicos de Git para clonar repositorios, comandos Docker para construir imágenes y ejecutar contenedores, además de herramientas de desarrollo frontend como Node.js y npm.
+Durante la práctica también se utilizaron herramientas como Git para clonar repositorios, Node.js y npm para administrar dependencias, además de comandos Docker para construir imágenes y ejecutar contenedores.
 
-La contenerización de aplicaciones React es ampliamente utilizada en entornos cloud, servidores Linux y plataformas DevOps modernas, permitiendo automatizar despliegues y simplificar la administración de aplicaciones web.
-
----
-
-## Figura 3-1. Arquitectura Docker Frontend + Backend
-
-![Arquitectura Docker](https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png)
-
----
-
-## Figura 3-2. Contenedores Docker y React
-
-![Docker React](https://miro.medium.com/v2/resize:fit:1200/1*Xh9fK0A5X0h8p5J8x1z4EA.png)
+La contenerización de aplicaciones web es ampliamente utilizada en entornos empresariales y plataformas cloud, permitiendo automatizar procesos y facilitar el trabajo colaborativo entre desarrolladores.
 
 ---
 
@@ -61,11 +48,10 @@ Para realizar esta práctica el estudiante necesita tener claros los siguientes 
 - Uso básico de Git y GitHub.
 - Manejo de navegador web.
 - Conceptos básicos de Docker.
-- Conceptos básicos de contenedores.
 - Uso de Node.js y npm.
-- Conocimientos básicos de React.
-- Configuración de puertos en aplicaciones web.
-- Manejo de archivos Dockerfile.
+- Configuración de puertos.
+- Manejo básico de React.
+- Creación de archivos Dockerfile.
 
 ---
 
@@ -75,10 +61,9 @@ Para realizar esta práctica el estudiante necesita tener claros los siguientes 
 - Ejecutar aplicaciones React dentro de Docker.
 - Crear imágenes Docker personalizadas.
 - Manipular archivos Dockerfile.
-- Comprender el funcionamiento de servicios frontend y backend.
-- Ejecutar múltiples contenedores simultáneamente.
+- Ejecutar múltiples servicios simultáneamente.
 - Verificar la comunicación entre frontend y backend.
-- Aplicar conceptos de virtualización ligera.
+- Aplicar conceptos básicos de virtualización ligera.
 
 ---
 
@@ -88,10 +73,9 @@ Para realizar esta práctica el estudiante necesita tener claros los siguientes 
 - Docker Desktop instalado.
 - Node.js instalado.
 - Git instalado.
-- Navegador web (Google Chrome, Firefox o Edge).
+- Navegador web.
+- Editor de código Visual Studio Code.
 - Acceso a Internet.
-- Cuenta de GitHub.
-- Visual Studio Code u otro editor de código.
 
 ---
 
@@ -105,13 +89,13 @@ Para realizar esta práctica el estudiante necesita tener claros los siguientes 
 
 ## Repositorios utilizados
 
-Frontend React:
+### Frontend React
 
 ```text
 https://github.com/Daviddotcoms/suda-frontend-s6
 ```
 
-Backend simulado:
+### Backend simulado
 
 ```text
 https://github.com/Daviddotcoms/mockAPI
@@ -122,8 +106,6 @@ https://github.com/Daviddotcoms/mockAPI
 # 8. Procedimiento
 
 ## Paso 1: Clonar el repositorio frontend
-
-Se utilizó Git para clonar el repositorio del proyecto React.
 
 ```bash
 git clone https://github.com/Daviddotcoms/suda-frontend-s6.git
@@ -141,8 +123,6 @@ cd suda-frontend-s6
 
 ## Paso 3: Instalar dependencias
 
-Se instalaron las dependencias necesarias utilizando npm.
-
 ```bash
 npm install
 ```
@@ -155,14 +135,7 @@ npm install
 npm run dev
 ```
 
-El proyecto se ejecutó correctamente en el navegador mediante localhost.
-
----
-
-## Figura 8-1. Ejecución 
-
-<img width="1366" height="636" alt="image" src="https://github.com/user-attachments/assets/1cc6d120-d53e-403b-878e-c5ae37fea8b2" />
-
+Con este comando se verificó que el frontend funcionara correctamente en localhost.
 
 ---
 
@@ -174,7 +147,7 @@ git clone https://github.com/Daviddotcoms/mockAPI.git
 
 ---
 
-## Paso 6: Ejecutar el backend simulado
+## Paso 6: Ejecutar el backend
 
 ```bash
 cd mockAPI
@@ -186,16 +159,9 @@ El backend quedó ejecutándose para proporcionar datos al frontend.
 
 ---
 
-## Figura 8-2. Backend MockAPI en ejecución
-
-<img width="523" height="397" alt="image" src="https://github.com/user-attachments/assets/5b9b05e8-f41c-418a-a4a3-6ca54a52f5f3" />
-
-
----
-
 ## Paso 7: Crear el archivo Dockerfile
 
-Se creó el archivo Dockerfile con la siguiente configuración:
+Se creó el archivo `Dockerfile` con la siguiente configuración:
 
 ```Dockerfile
 FROM node:20
@@ -223,12 +189,6 @@ docker build -t react-frontend .
 
 ---
 
-## Figura 8-3. Construcción de imagen Docker
-
-![Docker Build](https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png)
-
----
-
 ## Paso 9: Verificar imágenes Docker
 
 ```bash
@@ -237,7 +197,7 @@ docker images
 
 ---
 
-## Paso 10: Crear y ejecutar el contenedor
+## Paso 10: Crear el contenedor
 
 ```bash
 docker run -d -p 5173:5173 --name frontend-react react-frontend
@@ -253,46 +213,88 @@ docker ps
 
 ---
 
-## Figura 8-4. Contenedor Docker en ejecución
-
-![Docker Container](https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png)
-
----
-
 ## Paso 12: Acceder a la aplicación
 
-Se abrió el navegador en la siguiente dirección:
+Se abrió el navegador en:
 
 ```text
 http://localhost:5173
 ```
 
-La aplicación React se ejecutó correctamente desde el contenedor Docker y logró conectarse al backend simulado.
+La aplicación React logró ejecutarse correctamente dentro del contenedor Docker y conectarse al backend simulado.
 
 ---
 
 # 9. Resultados esperados
 
-Al finalizar la práctica se obtuvo una aplicación React ejecutándose dentro de un contenedor Docker, permitiendo acceder al sistema desde el navegador mediante localhost.
+Al finalizar la práctica se obtuvo una aplicación React ejecutándose correctamente dentro de un contenedor Docker. Además, el frontend logró comunicarse correctamente con el backend simulado, permitiendo visualizar la información esperada en el navegador.
 
-Además, se logró establecer comunicación entre el frontend y el backend simulado, verificando el correcto funcionamiento de la aplicación.
-
-Los resultados obtenidos permiten comprobar que Docker facilita la implementación de aplicaciones web de forma portable y aislada.
+Se comprobó que Docker facilita el despliegue y ejecución de aplicaciones web mediante entornos aislados y portables.
 
 ---
 
-## Figura 9-1. Resultado final de la aplicación
+# 10. Evidencias
 
-![Resultado Final](https://react.dev/images/brand/logo_dark.svg)
+## Figura 10-1. Clonación del repositorio frontend
+
+*(Insertar captura de pantalla)*
 
 ---
 
-# 10. Bibliografía
+## Figura 10-2. Instalación de dependencias npm
+
+*(Insertar captura de pantalla)*
+
+---
+
+## Figura 10-3. Ejecución local del proyecto React
+
+*(Insertar captura de pantalla)*
+
+---
+
+## Figura 10-4. Ejecución del backend MockAPI
+
+*(Insertar captura de pantalla)*
+
+---
+
+## Figura 10-5. Creación del Dockerfile
+
+*(Insertar captura de pantalla)*
+
+---
+
+## Figura 10-6. Construcción de imagen Docker
+
+*(Insertar captura de pantalla)*
+
+---
+
+## Figura 10-7. Verificación de imágenes Docker
+
+*(Insertar captura de pantalla)*
+
+---
+
+## Figura 10-8. Contenedor Docker en ejecución
+
+*(Insertar captura de pantalla)*
+
+---
+
+## Figura 10-9. Resultado final de la aplicación en el navegador
+
+*(Insertar captura de pantalla)*
+
+---
+
+# 11. Bibliografía
 
 - Merkel, D. (2014). *Docker: lightweight Linux containers for consistent development and deployment*. Linux Journal.
 - Turnbull, J. (2014). *The Docker Book*. Docker Series.
 - Freeman, E. (2019). *React: Up and Running*. O'Reilly Media.
-- Node.js Foundation. (2026). Node.js Documentation.
 - Docker Inc. (2026). Docker Documentation.
 - React Team. (2026). React Documentation.
+- Node.js Foundation. (2026). Node.js Documentation.
 - GitHub Documentation. (2026). GitHub Docs.
