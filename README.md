@@ -159,9 +159,10 @@ El proyecto se ejecutó correctamente en el navegador mediante localhost.
 
 ---
 
-## Figura 8-1. Ejecución local de React
+## Figura 8-1. Ejecución 
 
-![React Localhost](https://vitejs.dev/logo.svg)
+<img width="1366" height="636" alt="image" src="https://github.com/user-attachments/assets/1cc6d120-d53e-403b-878e-c5ae37fea8b2" />
+
 
 ---
 
@@ -187,7 +188,8 @@ El backend quedó ejecutándose para proporcionar datos al frontend.
 
 ## Figura 8-2. Backend MockAPI en ejecución
 
-![Backend MockAPI](https://nodejs.org/static/images/logo.svg)
+<img width="523" height="397" alt="image" src="https://github.com/user-attachments/assets/5b9b05e8-f41c-418a-a4a3-6ca54a52f5f3" />
+
 
 ---
 
