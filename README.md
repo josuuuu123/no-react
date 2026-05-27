@@ -239,6 +239,8 @@ Se comprobó que Docker facilita el despliegue y ejecución de aplicaciones web 
  <img width="921" height="603" alt="image" src="https://github.com/user-attachments/assets/821d4714-9777-4012-ba7f-7e33fb48b756" />
 <img width="921" height="601" alt="image" src="https://github.com/user-attachments/assets/16f731d7-a567-4662-9aa6-8497cef566c9" />
 <img width="921" height="317" alt="image" src="https://github.com/user-attachments/assets/b9be13a8-0d4c-4ac5-bdd8-8300be098dba" />
+<img width="1366" height="637" alt="image" src="https://github.com/user-attachments/assets/6e80166e-1f76-408c-aac8-64395cc53ee6" />
+
 
 # 11. Bibliografía
 
